@@ -1,5 +1,4 @@
 """Command line interface for indpack."""
-
 import argparse
 import json
 import sys
@@ -7,7 +6,7 @@ import sys
 from indpack.core import get_pid_args, get_ps_pids, parse_pid_args
 
 
-def main(argv: list[str] | None = None) -> int:
+def main(argv = None) -> int:
     parser = argparse.ArgumentParser(
         prog="indpack",
         description="Cross-platform process introspection tool",

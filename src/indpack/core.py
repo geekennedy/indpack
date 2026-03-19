@@ -21,7 +21,7 @@ def get_ps_pids() -> list[str]:
     raise OSError(f"Unsupported platform: {system}")
 
 
-def get_pid_args(pid: str) -> list[str]:
+def get_pid_args(pid) -> list[str]:
     """Return command line arguments for the given PID.
 
     Args:
